@@ -115,7 +115,7 @@ export default function LoginPage() {
                         <Lock size={20} />
                     </div>
                     <h2 className="text-3xl font-bold mb-2">
-                        {view === 'signup' ? 'Create LiAuthority Account' : (view === 'forgot_password' ? 'Reset Password' : 'Welcome to LiAuthority')}
+                        {view === 'signup' ? 'Create Account' : (view === 'forgot_password' ? 'Reset Password' : 'Welcome Back')}
                     </h2>
                     <p className="text-gray-400 text-sm">
                         {view === 'signup' ? 'Start building your professional authority' : (view === 'forgot_password' ? 'Enter your email to receive a reset link' : 'Sign in to manage your authority agents')}
