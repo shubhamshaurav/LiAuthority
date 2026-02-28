@@ -111,10 +111,8 @@ export default function LoginPage() {
                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-purple-600/20 rounded-full blur-[40px]" />
 
                 <div className="text-center mb-8 relative z-10">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-pink-600 mb-6 p-[2px] shadow-lg shadow-purple-500/20 mx-auto">
-                        <div className="w-full h-full rounded-[14px] bg-black flex items-center justify-center overflow-hidden">
-                            <img src="/logo.png" alt="LiAuthority Logo" className="w-full h-full object-contain p-2" />
-                        </div>
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-pink-600 mb-6 p-2 shadow-lg shadow-purple-500/20 mx-auto">
+                        <img src="/logo.png" alt="LiAuthority Logo" className="w-full h-full object-contain" />
                     </div>
                     <h2 className="text-3xl font-bold mb-2">
                         {view === 'signup' ? 'Create Account' : (view === 'forgot_password' ? 'Reset Password' : 'Welcome Back')}
