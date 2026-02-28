@@ -15,25 +15,25 @@ export default function Home() {
           <div className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center p-[2px] shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform duration-300">
               <div className="w-full h-full rounded-[10px] bg-black flex items-center justify-center overflow-hidden">
-                <img src="/logo.png" alt="LiAuthority Logo" className="w-full h-full object-contain p-1.5" />
+                <img src="/logo.png" alt="LiAuthority Logo" className="w-full h-full object-contain p-1" />
               </div>
             </div>
-            <span className="text-xl font-bold tracking-tight text-white">LiAuthority</span>
+            <span className="text-xl font-black tracking-tight text-white">LiAuthority</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
-            <a href="#features" className="hover:text-white transition-colors">Features</a>
-            <a href="#workflow" className="hover:text-white transition-colors">How it Works</a>
-            <a href="/blog" className="hover:text-white transition-colors">Blog</a>
-            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+            <a href="#features" className="hover:text-purple-400 transition-colors">Features</a>
+            <a href="#workflow" className="hover:text-purple-400 transition-colors">How it Works</a>
+            <a href="/blog" className="hover:text-purple-400 transition-colors">Blog</a>
+            <a href="#pricing" className="hover:text-purple-400 transition-colors">Pricing</a>
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="/login" className="text-sm font-bold text-gray-400 hover:text-white transition-colors">
+            <Link href="/login" className="text-sm font-bold text-gray-300 hover:text-white transition-colors">
               Login
             </Link>
             <Link href="/login">
-              <GradientButton size="sm" className="font-bold px-6">
+              <GradientButton size="sm" className="font-extrabold px-6">
                 Get Started
               </GradientButton>
             </Link>
