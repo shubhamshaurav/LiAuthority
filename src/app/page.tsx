@@ -23,15 +23,19 @@ export default function Home() {
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
             <a href="#features" className="hover:text-white transition-colors">Features</a>
+            <a href="#workflow" className="hover:text-white transition-colors">How it Works</a>
+            <a href="/blog" className="hover:text-white transition-colors">Blog</a>
             <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
           </div>
 
-          <div className="flex items-center gap-4 text-sm font-bold">
-            <Link href="/login" className="text-gray-400 hover:text-white">Login</Link>
+          <div className="flex items-center gap-6">
+            <Link href="/login" className="text-sm font-bold text-gray-400 hover:text-white transition-colors">
+              Login
+            </Link>
             <Link href="/login">
-              <button className="bg-white text-black px-5 py-2 rounded-full hover:bg-gray-200 transition-colors">
-                Join Waitlist
-              </button>
+              <GradientButton size="sm" className="font-bold px-6">
+                Get Started
+              </GradientButton>
             </Link>
           </div>
         </div>
