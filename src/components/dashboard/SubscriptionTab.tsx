@@ -239,8 +239,8 @@ export function SubscriptionTab() {
                     <h3 className="text-lg font-bold text-white">Recent Transactions</h3>
                 </div>
 
-                <div className="rounded-2xl overflow-hidden divide-y divide-white/5"
-                    style={{ background: 'rgba(26,9,40,0.9)', border: '1px solid rgba(124,58,237,0.2)', divideColor: 'rgba(124,58,237,0.1)' }}>
+                <div className="rounded-2xl overflow-hidden divide-y divide-[rgba(124,58,237,0.1)]"
+                    style={{ background: 'rgba(26,9,40,0.9)', border: '1px solid rgba(124,58,237,0.2)' }}>
                     {transactions.length > 0 ? transactions.map((tx) => (
                         <div key={tx.id}
                             className="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-white/[0.02] transition-colors group">
