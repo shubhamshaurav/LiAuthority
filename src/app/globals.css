@@ -8,9 +8,11 @@
     --accent-primary: 250 100% 70%;
     --accent-secondary: 300 100% 70%;
     --text-primary: 0 0% 100%;
+    --text-active: 0 0% 100%;
     --text-secondary: 240 5% 70%;
     --glass-border: 255 255 255 / 0.1;
     --glass-bg: 255 255 255 / 0.05;
+    --glass-bg-hover: var(--accent-primary) / 0.15;
 
     /* Font settings */
     --font-sans: 'Inter', sans-serif;
@@ -18,13 +20,19 @@
 
 [data-theme='light'] {
     --bg-primary: 0 0% 100%;
-    --bg-secondary: 0 0% 97%;
-    --accent-primary: 250 100% 60%;
-    --accent-secondary: 300 100% 60%;
-    --text-primary: 240 10% 5%;
-    --text-secondary: 240 5% 35%;
-    --glass-border: 0 0% 0% / 0.15;
-    --glass-bg: 0 0% 0% / 0.04;
+    --bg-secondary: 0 0% 96%;
+    --accent-primary: 250 90% 50%;
+    --accent-secondary: 300 90% 50%;
+    --text-primary: 240 5% 40%;
+    /* Grey base text */
+    --text-active: 0 0% 0%;
+    /* Pure black active text */
+    --text-secondary: 240 5% 60%;
+    /* Lighter grey for hints */
+    --glass-border: 0 0% 0% / 0.08;
+    --glass-bg: 0 0% 0% / 0.02;
+    --glass-bg-hover: 0 0% 0% / 0.06;
+    /* Darker hover in light mode */
 }
 
 body {

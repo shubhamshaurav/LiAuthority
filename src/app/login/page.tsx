@@ -143,10 +143,10 @@ export default function LoginPage() {
 
                 <form onSubmit={handleAuth} className="space-y-4 relative z-10">
                     {success ? (
-                        <div className="p-6 rounded-2xl bg-green-500/10 border border-green-500/20 text-green-400 text-sm flex flex-col items-center text-center gap-4">
-                            <Mail className="text-green-500" size={32} />
+                        <div className="p-6 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm flex flex-col items-center text-center gap-4">
+                            <Mail className="text-purple-400" size={32} />
                             <p>{success}</p>
-                            <button onClick={() => { setSuccess(null); setView('signin'); }} className="text-green-500 font-bold">Back to Sign In</button>
+                            <button onClick={() => { setSuccess(null); setView('signin'); }} className="text-purple-400 font-bold hover:text-purple-300 transition-colors">Back to Sign In</button>
                         </div>
                     ) : (
                         <>
