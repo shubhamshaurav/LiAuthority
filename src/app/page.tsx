@@ -136,7 +136,7 @@ export default function Home() {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-white/50">
-            {[['#features', 'Features'], ['#how', 'How it Works'], ['#pricing', 'Pricing'], ['/blog', 'Blog']].map(([href, label]) => (
+            {[['#features', 'Features'], ['#how', 'How it Works'], ['#pricing', 'Pricing'], ['/blog', 'Blog'], ['/contact', 'Contact']].map(([href, label]) => (
               <a key={label} href={href} className="hover:text-white transition-colors">{label}</a>
             ))}
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
         {navOpen && (
           <div className="md:hidden px-6 pb-6 pt-2 space-y-4 border-t border-white/5"
             style={{ background: 'rgba(6,0,16,0.95)' }}>
-            {[['#features', 'Features'], ['#how', 'How it Works'], ['#pricing', 'Pricing'], ['/blog', 'Blog']].map(([href, label]) => (
+            {[['#features', 'Features'], ['#how', 'How it Works'], ['#pricing', 'Pricing'], ['/blog', 'Blog'], ['/contact', 'Contact']].map(([href, label]) => (
               <a key={label} href={href} onClick={() => setNavOpen(false)} className="block text-sm font-bold text-white/60 hover:text-white">{label}</a>
             ))}
             <GradBtn href="/login" className="w-full justify-center">Get Started <ArrowRight size={14} /></GradBtn>
@@ -578,7 +578,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-6 text-xs text-white/30 font-semibold">
-            {[['#features', 'Features'], ['#how', 'How it Works'], ['#pricing', 'Pricing'], ['/blog', 'Blog'], ['/login', 'Sign in']].map(([h, l]) => (
+            {[['#features', 'Features'], ['#how', 'How it Works'], ['#pricing', 'Pricing'], ['/blog', 'Blog'], ['/contact', 'Contact'], ['/login', 'Sign in']].map(([h, l]) => (
               <a key={l} href={h} className="hover:text-white transition-colors">{l}</a>
             ))}
           </div>
