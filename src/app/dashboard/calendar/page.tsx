@@ -48,7 +48,7 @@ export default function CalendarPage() {
     const router = useRouter();
     const [today] = useState(new Date());
     const [currentDate, setCurrentDate] = useState(new Date());
-    const [activeTab, setActiveTab] = useState<'overview' | 'category' | 'tags'>('overview');
+    const [activeTab, setActiveTab] = useState<'overview' | 'category' | 'tags' | 'archive'>('overview');
     const [scheduledPosts, setScheduledPosts] = useState<ScheduledPost[]>([]);
     const [allPosts, setAllPosts] = useState<Post[]>([]);
     const [loading, setLoading] = useState(true);
@@ -258,10 +258,10 @@ ${rows.map(r => `<tr><td><strong>${r.date}</strong></td><td style="font-family:m
                     <div className="flex items-center gap-1">
                         {TABS.map(tab => {
                             const Icon = tab.icon;
-                            const active = activeTab === (tab.id as any) || (tab.id === 'archive' && activeTab === 'archive');
+                            const active = activeTab === tab.id || (tab.id === 'archive' && activeTab === 'archive');
                             return (
                                 <button key={tab.id}
-                                    onClick={() => setActiveTab(tab.id === 'archive' ? 'overview' : tab.id as any)}
+                                    onClick={() => setActiveTab(tab.id === 'archive' ? 'overview' : tab.id)}
                                     className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all"
                                     style={activeTab === tab.id
                                         ? { background: 'rgba(124,58,237,0.2)', color: '#c084fc', border: '1px solid rgba(124,58,237,0.3)' }
